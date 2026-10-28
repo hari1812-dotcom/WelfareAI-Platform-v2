@@ -7,6 +7,7 @@ import authRoutes from './routes/authRoutes.js';
 import dashboardRoutes from './routes/dashboardRoutes.js';
 import schemeRoutes from './routes/schemeRoutes.js';
 import documentRoutes from './routes/documentRoutes.js';
+import feedbackRoutes from './routes/feedbackRoutes.js';
 import applicationRoutes from './routes/applicationRoutes.js';
 
 const app = express();
@@ -24,6 +25,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/schemes', schemeRoutes);
 app.use('/api/documents', documentRoutes);
+app.use('/api/feedback', feedbackRoutes);
 app.use('/api/applications', applicationRoutes);
 
 app.use((_req, res) => {

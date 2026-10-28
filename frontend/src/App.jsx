@@ -15,6 +15,7 @@ import { WhatIfPage } from '@/pages/WhatIfPage';
 import { ComparePage } from '@/pages/ComparePage';
 import { AdminPage } from '@/pages/AdminPage';
 import { FeedbackPage } from '@/pages/FeedbackPage';
+import { CommunityFeedbackPage } from '@/pages/CommunityFeedbackPage';
 import { ProfilePage } from '@/pages/ProfilePage';
 import { CategoryPage } from '@/pages/CategoryPage';
 import { ApplicationTrackingProvider } from '@/contexts/ApplicationTrackingContext';
@@ -41,6 +42,7 @@ function App() {
         <Route path="/compare" element={<ComparePage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="/feedback" element={<FeedbackPage />} />
+        <Route path="/feedback/reviews" element={<CommunityFeedbackPage />} />
         <Route path="/profile" element={<ProfilePage />} />
       </Routes>
       </ApplicationTrackingProvider>

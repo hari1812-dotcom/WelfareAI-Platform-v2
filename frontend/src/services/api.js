@@ -88,6 +88,17 @@ export function getDashboardData() {
   return request('/dashboard');
 }
 
+export function submitFeedbackApi(feedback) {
+  return request('/feedback', {
+    method: 'POST',
+    body: JSON.stringify(feedback),
+  });
+}
+
+export function getPublicFeedbackApi() {
+  return request('/feedback');
+}
+
 export function getRecommendedSchemes() {
   return request('/schemes/recommend');
 }

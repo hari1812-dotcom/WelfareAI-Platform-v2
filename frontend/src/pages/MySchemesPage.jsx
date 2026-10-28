@@ -49,7 +49,6 @@ import {
 } from '@/data/myschemeDataset';
 
 import { getSchemeCatalogText } from '@/utils/schemeCatalogTranslations';
-origin/main
 
 const visibleCategories = [
   { id: 'agriculture-rural-environment', label: 'Agriculture', description: 'Support for farmers and rural communities', icon: Wheat },

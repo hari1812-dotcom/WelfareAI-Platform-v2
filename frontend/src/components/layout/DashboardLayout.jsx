@@ -91,7 +91,7 @@ export function DashboardLayout({ children, title, subtitle, backTo, onBack }) {
                     localStorage.removeItem('token');
                     navigate('/');
                   }}
-                  className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-xs text-error-600 hover:bg-error-50"
+                  className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-xs text-primary-700 hover:bg-sky-50"
                 >
                   <LogOut className="h-3.5 w-3.5" /> {t('common.logout', { defaultValue: 'Logout' })}
                 </button>
@@ -173,7 +173,7 @@ export function DashboardLayout({ children, title, subtitle, backTo, onBack }) {
                           localStorage.removeItem('token');
                           navigate('/');
                         }}
-                        className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-xs font-bold text-error-600 hover:bg-error-50 transition-colors cursor-pointer"
+                        className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-xs font-bold text-primary-700 hover:bg-sky-50 transition-colors cursor-pointer"
                       >
                         <LogOut className="h-4 w-4" />
                         {t('common.logout', { defaultValue: 'Logout' })}
@@ -242,7 +242,7 @@ function SidebarContent({ user, location, onClose, onLogout }) {
           </div> */}
         {/* </div> */}
         {/* <Link to="/admin" onClick={onClose} className="nav-link mb-1"><ShieldCheck className="h-5 w-5" /> {t('common.adminDashboard')}</Link> */}
-        <button onClick={onLogout} className="nav-link w-full text-error-600 hover:bg-error-50 hover:text-error-700"><LogOut className="h-5 w-5" /> {t('common.logout')}</button>
+        <button onClick={onLogout} className="nav-link w-full !text-primary-700 hover:bg-sky-50 hover:!text-primary-700"><LogOut className="h-5 w-5" /> {t('common.logout')}</button>
       </div>
       
     </div>

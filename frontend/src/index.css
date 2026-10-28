@@ -38,9 +38,11 @@
 .dashboard-sidebar .nav-link { color: #475569; }
 .dashboard-sidebar .nav-link:hover { color: #0878d1; background: #eef7ff; }
 .dashboard-sidebar .nav-link-active { color: #fff; background: linear-gradient(110deg, #0aa9e8, #1260f5); box-shadow: 0 7px 16px rgb(2 132 199 / 0.2); }
+.dashboard-sidebar .nav-link svg { color: #1689ec; }
+.dashboard-sidebar .nav-link-active svg { color: #fff; }
 .dashboard-sidebar > div > div:last-child { border-color: #e3ebf3; }
-.dashboard-sidebar > div > div:last-child button { color: #dc2626; }
-.dashboard-sidebar > div > div:last-child button:hover { color: #b91c1c; background: #fef2f2; }
+.dashboard-sidebar > div > div:last-child button { color: #0878d1; }
+.dashboard-sidebar > div > div:last-child button:hover { color: #0369a1; background: #eef7ff; }
 .dashboard-theme .dashboard-brand-icon,
 .dashboard-theme [class*="bg-primary-"] { background-color: #1689ec; }
 .dashboard-theme [class*="bg-primary-50"],
